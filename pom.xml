@@ -19,25 +19,24 @@
 			<artifactId>ljbmDominio</artifactId>
 			<version>${project.version}</version>
 		</dependency>
-		
+
 		<dependency>
 			<artifactId>hibernate-jpa-2.1-api</artifactId>
 			<groupId>org.hibernate.javax.persistence</groupId>
-			<version>1.0.0.Final</version>
-			<scope>provided</scope>
+			<version>${hibernate-jpa-2.1-api.version}</version>
 		</dependency>
 
 		<dependency>
 			<groupId>javax.ejb</groupId>
 			<artifactId>javax.ejb-api</artifactId>
-			<version>3.2</version>
+			<version>${javax.ejb.version}</version>
 			<scope>provided</scope>
 		</dependency>
-		<dependency>
-			<groupId>axis</groupId>
-			<artifactId>axis</artifactId>
-			<version>1.4</version>
-		</dependency>
+		<!-- <dependency> -->
+		<!-- <groupId>axis</groupId> -->
+		<!-- <artifactId>axis</artifactId> -->
+		<!-- <version>1.4</version> -->
+		<!-- </dependency> -->
 	</dependencies>
 
 </project>
