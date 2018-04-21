@@ -4,7 +4,10 @@
 package br.com.ljbm.fp.servico;
 
 /**
- * Financas pessoais acesso ao modelo
+ * 
+ * Remote interface for the FPDominio stateless session bean.
+ *
+ * Financas Pessoais Modelo
  * 
  * @author ljbm
  * @since 09/04/2012
@@ -16,7 +19,8 @@ import br.com.ljbm.fp.modelo.Aplicacao;
 import br.com.ljbm.fp.modelo.Corretora;
 import br.com.ljbm.fp.modelo.FundoInvestimento;
 
-public interface FPDominio {
+public interface FPDominio 
+{
 
 	// FundoInvestimento segment state change methods
 	/**
