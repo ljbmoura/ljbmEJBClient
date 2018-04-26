@@ -52,7 +52,7 @@ public interface FPDominio
 	/**
 	 * Returns all FundoInvestimento in the FP (Financas Pessoais) model
 	 */
-	public List<FundoInvestimento> getAllFundoInvestimento() throws FPException;
+	public List<FundoInvestimento> getAllFundoInvestimento();
 
 	/**
 	 * Returns all FundoInvestimento in the FP (Financas Pessoais) model ordered by
