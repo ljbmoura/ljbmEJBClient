@@ -26,7 +26,7 @@ public interface FPDominio
 	/**
 	 * Adds the FundoInvestimento to the FP (Financas Pessoais) model
 	 */
-	public FundoInvestimento addFundoInvestimento(FundoInvestimento fundoInvestimento) throws FPException;
+	public FundoInvestimento addFundoInvestimento(FundoInvestimento fundoInvestimento);
 
 	/**
 	 * Deletes the fundoInvestimento from the FP (Financas Pessoais) model
