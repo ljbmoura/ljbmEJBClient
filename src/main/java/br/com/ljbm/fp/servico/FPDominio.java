@@ -75,4 +75,6 @@ public interface FPDominio
 	public Corretora getCorretora(Long ide) throws FPException;
 
 	public Corretora addCorretora(Corretora fundoInvestimento) throws FPException;
+
+	public List<FundoInvestimento> getFundosCorretora(Long ide);
 }
