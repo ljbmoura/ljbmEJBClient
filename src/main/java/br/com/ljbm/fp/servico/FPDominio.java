@@ -53,6 +53,10 @@ public interface FPDominio
 	 * Returns all FundoInvestimento in the FP (Financas Pessoais) model
 	 */
 	public List<FundoInvestimento> getAllFundoInvestimento();
+	/**
+	 * Dado um agente de custódia e um título, retorna os FundoInvestimento do modelo
+	 */
+	public List<FundoInvestimento> getFundoInvestimentoByAgenteCustodiaETitulo(String agente, String titulo);
 
 	/**
 	 * Returns all FundoInvestimento in the FP (Financas Pessoais) model ordered by
@@ -62,7 +66,7 @@ public interface FPDominio
 
 	
 	// Aplicacao segment state change methods
-	public void addAplicacao(Aplicacao aplicacao) throws FPException;
+	public Aplicacao addAplicacao(Aplicacao aplicacao) throws FPException;
 
 	public void updateAplicacao(Aplicacao aplicacao) throws FPException;
 
@@ -77,4 +81,5 @@ public interface FPDominio
 	public Corretora addCorretora(Corretora fundoInvestimento) throws FPException;
 
 	public Corretora getFundosCorretora(Long ide);
+
 }

@@ -3,6 +3,7 @@ package br.com.ljbm.fp.servico;
 import java.util.List;
 
 import br.com.ljbm.fp.modelo.ComparacaoInvestimentoVersusSELIC;
+import br.com.ljbm.fp.modelo.PosicaoTituloPorAgente;
 
 
 /**
@@ -72,7 +73,7 @@ public interface AvaliadorInvestimento {
 	 * 
 	 * 
 	 */
-	List<ComparacaoInvestimentoVersusSELIC> comparaInvestimentosComSELIC(String dataPosicao);
+	List<ComparacaoInvestimentoVersusSELIC> comparaInvestimentosComSELIC(List<PosicaoTituloPorAgente> extrato, String dataPosicao);
 
 //	/**
 //	 * Atualiza a base de dadosa a partir de um arquivo de extrato de
