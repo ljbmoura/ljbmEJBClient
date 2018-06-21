@@ -3,6 +3,8 @@
  */
 package br.com.ljbm.fp.servico;
 
+import java.math.BigDecimal;
+import java.time.LocalDate;
 /**
  * 
  * Remote interface for the FPDominio stateless session bean.
@@ -72,7 +74,7 @@ public interface FPDominio
 
 	public void deleteAplicacao(Aplicacao aplicacao) throws FPException;
 
-	public Aplicacao getAplicacao(Long documento) throws FPException;
+	public Aplicacao getAplicacao(Long ide) throws FPException;
 
 	public List<Aplicacao> getAllAplicacao() throws FPException;
 
@@ -81,5 +83,10 @@ public interface FPDominio
 	public Corretora addCorretora(Corretora fundoInvestimento) throws FPException;
 
 	public Corretora getFundosCorretora(Long ide);
+
+	public BigDecimal getCoeficienteSELIC(LocalDate dataCompra, LocalDate dataAlvo);
+
+	public void addCoeficienteSELIC(LocalDate dataCompra, LocalDate dataAlvo,
+			BigDecimal fatorRemuneracaoAcumuladaSELIC);
 
 }
